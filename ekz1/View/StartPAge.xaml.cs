@@ -1,5 +1,4 @@
-﻿using ekz1.View;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,19 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ekz1
+namespace ekz1.View
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для StartPAge.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartPAge : Page
     {
-        public MainWindow()
+        public StartPAge()
         {
             InitializeComponent();
+        }
 
-            App.MainFrame = MainFrame;
-            MainFrame.Content = new StartPAge();
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            App.MainFrame.Content = new MainPage();
         }
     }
 }

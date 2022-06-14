@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ekz1
 {
@@ -13,5 +14,6 @@ namespace ekz1
     /// </summary>
     public partial class App : Application
     {
+        public static Frame MainFrame = null;
     }
 }
